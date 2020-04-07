@@ -103,3 +103,11 @@ li a:hover{
     width: 100px;
 }
 
+.B{
+    float: left;
+    font-size: 18px;
+    margin-right: 2px;
+    display: block;
+    background-color: #e2e2e294;
+}
+

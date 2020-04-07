@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="this page about my programming languages and this is my first weppage">
@@ -7,112 +8,256 @@
     <link rel="stylesheet" type="text/css" href="sheet.css">
 
     <style>
-    img{
-        float:right ;
-    }
+        img {
+            float: right;
+        }
     </style>
 </head>
 
 <body>
+    <div class="Info">
+        <script src='js/javascript.js'></script>
+
+        <script type="text/javascript">
+            // window.onload = function(){
+            //     alert('wellcome to mylanguage page');
+            // }
+
+            function msg1() {
+                //alert('hi youuuuuuuuuuu');
+                //var n1 =5; var n2 =5; var sum= parseInt(n1)+parseInt(n2)
+                //document.write(55)
+                //var array=["Ali", "Ahmed", "hayder"] ; alert(array[0]);
+                //var object={name:"Ali", age:19, height:172} ; alert(object.name + object.age);
+                //for (var i=0 ;i<20 ;i++ ){document.write("<li>"+i+"</li>")};
+                //var i=0 ; while (i<20){document.write("<li>"+i+"</li>"); i++}
+                //var x=5; if(x>=5){document.write("X is more than 4");}else{document.write("X is less than 5")}
+                //try {sum(); alert("sum is exist")}catch(err){alert(err.msg);}finally{document.write("test done")}
+
+                // var textj ='{ "name":"hayder","age":"15","job":["gamer","thing","nothing"] }';   //json test ==> its about reach iteam
+                // var obj=JSON.parse(textj);
+                // document.write(obj.name +"  your job is  " +obj.job[0]);
+
+                // var timer=setInterval(function (){mytimer()}, 1000) ;
+                // var x=0; function mytimer(){document.write(x); x++;}
+
+
+                var somethin = document.getElementById("somethin")
+                //debugger ; 
+                switch (somethin.innerHTML) {
+                    case "som thin r vary bad-_-": somethin.innerHTML = "take things easy^_*"; break;
+                    case "take things easy^_*": somethin.innerHTML = "take other things easy*_^"; break;
+                    case "take other things easy*_^": somethin.innerHTML = "som thin r vary bad-_-"; break;
+                } //console.log(somethin.innerHTML)
+            }
+            var msg2 = function () {        //>&&&&< Closures: it's another way to display block of code
+
+                // var r=confirm("are you shre to display message")
+                // if (r=true){document.getElementById("somethin").innerHTML= "Wellcome myfriend"}
+
+                // var data=prompt("enter name:","Ali").toUpperCase()       //you can add condition
+                // document.getElementById("somethin").innerHTML="Wellcome  "+data
+            }
+
+        </script><br><br>
+        <input class="B" type="button" onclick="msg1()" value="click B1">
+        <input class="B" type="button" onclick="msg2()" value="click B2">
+
+        <!-- ================================================================================================ -->
+        <!-- ------------------------- <input id="AAA" type="text" value="Name" onkeypress="return textvalue()"> -->
+        <form><input id="Amm" type="submit" value="click B3"></form>
+        <input class="B" type="button" onclick="consttest()" value="click B4">
+        <script>
+            // // // // // // // // // function textvalue(){
+            // // // // // // // // // var AAA = document.getElementById("AAA").
+            // // // // // // // // //  if(AAA.length>5) 
+            // // // // // // // // // return false; 
+            // // // // // // // // // }
+
+
+            document.getElementById("Amm").addEventListener("mouseover", function () { document.getElementById("Amm").className = "B" });
+
+            var A = document.getElementById("Amm")
+            A.onclick = function () {
+                A.className = "B"
+                alert("click event")
+            }
+            function consttest() {
+                const user = { name: "    Ali", age: "    18" }
+                const {name, age } = user;
+                document.write("your name is:"+ user.name +"   your age is:  "+ user.age)
+            }
+        </script>
+
+
+
+        <big>
+            <h1 id="somethin" style="border: solid 2px; background-color: #04adda;">som thin r vary bad-_-</h1>
+        </big>
+    </div>
+
     <ul>
         <li><a href="#home">home</a></li>
-        <li><a href="https://youtube.com" >youtube</a></li>
+        <li><a href="https://youtube.com">youtube</a></li>
         <li><a href="https://soundcloud.com">soundcld</a></li>
         <li><a href="#thing">thing</a></li>
     </ul><br>
-       
-    <div class="Info" >
-        <big><h1 style="border: solid 2px; background-color: #04adda;" >Note* ahmed's Brother has a Resturant and he will never disappoint you ^_* </h1></big><hr><br>
-        <big><h1> C Sharp (programming language) </h1></big><hr>
-             From Wikipedia, the free encyclopedia
-        <img class="img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/C_Sharp_logo.svg/225px-C_Sharp_logo.svg.png" alt="image fialled">
-    
+
+    <div class="Info">
+        <!--<big><h1 style="border: solid 2px; background-color: #04adda;" >Note* ahmed's Brother has a Resturant and he will never disappoint you ^_* </h1></big><hr><br>-->
+        <big>
+            <h1> C Sharp (programming language) </h1>
+        </big>
+        <hr>
+        From Wikipedia, the free encyclopedia
+        <img class="img"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/C_Sharp_logo.svg/225px-C_Sharp_logo.svg.png"
+            alt="image fialled">
+
         <artical>
             <section>
-             <h1> C Sharp (programming language)  :</h1>
-          <p style="max-width: 80%;" >
-            The substitution of the # is due to technical restrictions.
-            C# (pronounced see sharp, like the musical note C♯, but written with the number sign)[b] is a general-purpose, multi-paradigm programming language encompassing strong typing, lexically scoped, imperative, declarative, functional, generic, object-oriented (class-based), and component-oriented programming disciplines.[16] It was developed around 2000 by Microsoft as part of its .NET initiative, and later approved as an international standard by Ecma (ECMA-334) and ISO (ISO/IEC 23270:2018). Mono is the name of the free and open-source project to develop a compiler and runtime for the language. C# is one of the programming languages designed for the Common Language Infrastructure (CLI).
-            <br>
-            C# was designed by Anders Hejlsberg, and its development team is currently led by Mads Torgersen. The most recent version is 8.0, which was released in 2019 alongside Visual Studio 2019 version 16.3.[17]             <br> for more information <a href="https://en.wikipedia.org/wiki/JavaScript">Click here</a>
-            <br><br>
-          </p>
+                <h1> C Sharp (programming language) :</h1>
+                <p style="max-width: 80%;">
+                    The substitution of the # is due to technical restrictions.
+                    C# (pronounced see sharp, like the musical note C♯, but written with the number sign)[b] is a
+                    general-purpose, multi-paradigm programming language encompassing strong typing, lexically scoped,
+                    imperative, declarative, functional, generic, object-oriented (class-based), and component-oriented
+                    programming disciplines.[16] It was developed around 2000 by Microsoft as part of its .NET
+                    initiative, and later approved as an international standard by Ecma (ECMA-334) and ISO (ISO/IEC
+                    23270:2018). Mono is the name of the free and open-source project to develop a compiler and runtime
+                    for the language. C# is one of the programming languages designed for the Common Language
+                    Infrastructure (CLI).
+                    <br>
+                    C# was designed by Anders Hejlsberg, and its development team is currently led by Mads Torgersen.
+                    The most recent version is 8.0, which was released in 2019 alongside Visual Studio 2019 version
+                    16.3.[17] <br> for more information <a href="https://en.wikipedia.org/wiki/JavaScript">Click
+                        here</a>
+                    <br><br>
+                </p>
             </section>
         </artical>
-    
+
         <hr>
     </div>
 
     <div class="Info">
-        <big><h1> Hypertext Markup Language (HTML) </h1></big><hr>
+        <big>
+            <h1> Hypertext Markup Language (HTML) </h1>
+        </big>
+        <hr>
         From Wikipedia, the free encyclopedia
         <img class="img" src="https://www.w3.org/html/logo/downloads/HTML5_Logo_256.png" alt="image fialled">
 
         <artical>
-          <section>
-            <h1> Hypertext Markup Language (HTML) : </h1>
-          <p style="max-width: 80%;">
-            is the standard markup language for documents designed to be displayed in a web browser. It can be assisted by technologies such as Cascading Style Sheets (CSS) and scripting languages such as JavaScript.
+            <section>
+                <h1> Hypertext Markup Language (HTML) : </h1>
+                <p style="max-width: 80%;">
+                    is the standard markup language for documents designed to be displayed in a web browser. It can be
+                    assisted by technologies such as Cascading Style Sheets (CSS) and scripting languages such as
+                    JavaScript.
 
-            Web browsers receive HTML documents from a web server or from local storage and render the documents into multimedia web pages. HTML describes the structure of a web page semantically and originally included cues for the appearance of the document.
-            
-            HTML elements are the building blocks of HTML pages. With HTML constructs, images and other objects such as interactive forms may be embedded into the rendered page. HTML provides a means to create structured documents by denoting structural semantics for text such as headings, paragraphs, lists, links, quotes and other items. HTML elements are delineated by tags, written using angle brackets. Tags such as img and input directly introduce content into the page. Other tags such as p surround and provide information about document text and may include other tags as sub-elements. Browsers do not display the HTML tags, but use them to interpret the content of the page.
-            
-            HTML can embed programs written in a scripting language such as JavaScript, which affects the behavior and content of web pages. Inclusion of CSS defines the look and layout of content. The World Wide Web Consortium (W3C), former maintainer of the HTML and current maintainer of the CSS standards, has encouraged the use of CSS over explicit presentational HTML since 1997.[2]
-             <br> for more information <a href="https://en.wikipedia.org/wiki/HTML"> Click here</a>
-             <br><br>
-          </p>
-          </section>
+                    Web browsers receive HTML documents from a web server or from local storage and render the documents
+                    into multimedia web pages. HTML describes the structure of a web page semantically and originally
+                    included cues for the appearance of the document.
+
+                    HTML elements are the building blocks of HTML pages. With HTML constructs, images and other objects
+                    such as interactive forms may be embedded into the rendered page. HTML provides a means to create
+                    structured documents by denoting structural semantics for text such as headings, paragraphs, lists,
+                    links, quotes and other items. HTML elements are delineated by tags, written using angle brackets.
+                    Tags such as img and input directly introduce content into the page. Other tags such as p surround
+                    and provide information about document text and may include other tags as sub-elements. Browsers do
+                    not display the HTML tags, but use them to interpret the content of the page.
+
+                    HTML can embed programs written in a scripting language such as JavaScript, which affects the
+                    behavior and content of web pages. Inclusion of CSS defines the look and layout of content. The
+                    World Wide Web Consortium (W3C), former maintainer of the HTML and current maintainer of the CSS
+                    standards, has encouraged the use of CSS over explicit presentational HTML since 1997.[2]
+                    <br> for more information <a href="https://en.wikipedia.org/wiki/HTML"> Click here</a>
+                    <br><br>
+                </p>
+            </section>
         </artical>
         <hr>
     </div>
-    <div class="Info" >
-        <big><h1> Cascading Style Sheets (CSS) </h1></big><hr>
+    <div class="Info">
+        <big>
+            <h1> Cascading Style Sheets (CSS) </h1>
+        </big>
+        <hr>
         From Wikipedia, the free encyclopedia
-        <img class="img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/225px-CSS3_logo_and_wordmark.svg.png" alt="image fialled">
+        <img class="img"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/225px-CSS3_logo_and_wordmark.svg.png"
+            alt="image fialled">
 
         <artical>
             <section>
-             <h1> Cascading Style Sheets (CSS) :</h1>
-          <p style="max-width: 80%;" >
-             is a style sheet language used for describing the presentation of a document written in a markup language like HTML.[1] CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript.[2]
+                <h1> Cascading Style Sheets (CSS) :</h1>
+                <p style="max-width: 80%;">
+                    is a style sheet language used for describing the presentation of a document written in a markup
+                    language like HTML.[1] CSS is a cornerstone technology of the World Wide Web, alongside HTML and
+                    JavaScript.[2]
 
-             CSS is designed to enable the separation of presentation and content, including layout, colors, and fonts.[3] This separation can improve content accessibility, provide more flexibility and control in the specification of presentation characteristics, enable multiple web pages to share formatting by specifying the relevant CSS in a separate .css file, and reduce complexity and repetition in the structural content.
-             
-             Separation of formatting and content also makes it feasible to present the same markup page in different styles for different rendering methods, such as on-screen, in print, by voice (via speech-based browser or screen reader), and on Braille-based tactile devices. CSS also has rules for alternate formatting if the content is accessed on a mobile device.[4]
-             
-             The name cascading comes from the specified priority scheme to determine which style rule applies if more than one rule matches a particular element. This cascading priority scheme is predictable.
-             
-             The CSS specifications are maintained by the World Wide Web Consortium (W3C). Internet media type (MIME type) text/css is registered for use with CSS by RFC 2318 (March 1998). The W3C operates a free CSS validation service for CSS documents.[5]
-             <br> for more information <a href="https://en.wikipedia.org/wiki/Cascading_Style_Sheets">Click here</a>
-            <br><br><br>
-          </p>
+                    CSS is designed to enable the separation of presentation and content, including layout, colors, and
+                    fonts.[3] This separation can improve content accessibility, provide more flexibility and control in
+                    the specification of presentation characteristics, enable multiple web pages to share formatting by
+                    specifying the relevant CSS in a separate .css file, and reduce complexity and repetition in the
+                    structural content.
+
+                    Separation of formatting and content also makes it feasible to present the same markup page in
+                    different styles for different rendering methods, such as on-screen, in print, by voice (via
+                    speech-based browser or screen reader), and on Braille-based tactile devices. CSS also has rules for
+                    alternate formatting if the content is accessed on a mobile device.[4]
+
+                    The name cascading comes from the specified priority scheme to determine which style rule applies if
+                    more than one rule matches a particular element. This cascading priority scheme is predictable.
+
+                    The CSS specifications are maintained by the World Wide Web Consortium (W3C). Internet media type
+                    (MIME type) text/css is registered for use with CSS by RFC 2318 (March 1998). The W3C operates a
+                    free CSS validation service for CSS documents.[5]
+                    <br> for more information <a href="https://en.wikipedia.org/wiki/Cascading_Style_Sheets">Click
+                        here</a>
+                    <br><br><br>
+                </p>
             </section>
         </artical>
 
         <hr>
     </div>
-    <div class="Info" >
-        <big><h1> JavaScript </h1></big><hr>
-             From Wikipedia, the free encyclopedia
-        <img class="img" src="https://abo-ziad95.github.io/potfolio/img/javascript.png" alt="image fialled" >
+    <div class="Info">
+        <big>
+            <h1> JavaScript </h1>
+        </big>
+        <hr>
+        From Wikipedia, the free encyclopedia
+        <img class="img" src="https://abo-ziad95.github.io/potfolio/img/javascript.png" alt="image fialled">
 
         <artical>
             <section>
-             <h1> JavaScript  :</h1>
-          <p style="max-width: 80%;" >
-             often abbreviated as JS, is a programming language that conforms to the ECMAScript specification.[7] JavaScript is high-level, often just-in-time compiled, and multi-paradigm. It has curly-bracket syntax, dynamic typing, prototype-based object-orientation, and first-class functions.
+                <h1> JavaScript :</h1>
+                <p style="max-width: 80%;">
+                    often abbreviated as JS, is a programming language that conforms to the ECMAScript specification.[7]
+                    JavaScript is high-level, often just-in-time compiled, and multi-paradigm. It has curly-bracket
+                    syntax, dynamic typing, prototype-based object-orientation, and first-class functions.
 
-             Alongside HTML and CSS, JavaScript is one of the core technologies of the World Wide Web.[8] JavaScript enables interactive web pages and is an essential part of web applications. The vast majority of websites use it for client-side page behavior,[9] and all major web browsers have a dedicated JavaScript engine to execute it.
+                    Alongside HTML and CSS, JavaScript is one of the core technologies of the World Wide Web.[8]
+                    JavaScript enables interactive web pages and is an essential part of web applications. The vast
+                    majority of websites use it for client-side page behavior,[9] and all major web browsers have a
+                    dedicated JavaScript engine to execute it.
 
-             As a multi-paradigm language, JavaScript supports event-driven, functional, and imperative programming styles. It has application programming interfaces (APIs) for working with text, dates, regular expressions, standard data structures, and the Document Object Model (DOM). However, the language itself does not include any input/output (I/O), such as networking, storage, or graphics facilities, as the host environment (usually a web browser) provides those APIs.
+                    As a multi-paradigm language, JavaScript supports event-driven, functional, and imperative
+                    programming styles. It has application programming interfaces (APIs) for working with text, dates,
+                    regular expressions, standard data structures, and the Document Object Model (DOM). However, the
+                    language itself does not include any input/output (I/O), such as networking, storage, or graphics
+                    facilities, as the host environment (usually a web browser) provides those APIs.
 
-             Originally used only in web browsers, JavaScript engines are also now embedded in server-side website deployments and non-browser applications.
+                    Originally used only in web browsers, JavaScript engines are also now embedded in server-side
+                    website deployments and non-browser applications.
 
-             Although there are similarities between JavaScript and Java, including language name, syntax, and respective standard libraries, the two languages are distinct and differ greatly in design.
-             <br> for more information <a href="https://en.wikipedia.org/wiki/JavaScript">Click here</a>
-            <br><br>
-          </p>
+                    Although there are similarities between JavaScript and Java, including language name, syntax, and
+                    respective standard libraries, the two languages are distinct and differ greatly in design.
+                    <br> for more information <a href="https://en.wikipedia.org/wiki/JavaScript">Click here</a>
+                    <br><br>
+                </p>
             </section>
         </artical>
 
@@ -130,7 +275,7 @@
                     
                 </body>
             </html>-->
-        
+
         <!--<h2 id="hover_active">testing hover & active</h2>
     your inputs
     Name    :<input type="text"><br>
@@ -168,6 +313,8 @@
         anddddddddddddddddd itttttttttt willllllllllllllllllllllllll 
         neeeeeeeeeeeeever ennnnnnnnnnnnnnnnndddddddddddddddddddddddd
     </div><br><br><br><br>-->
-    
-<br><br></body>
+
+        <br><br>
+</body>
+
 </html>
